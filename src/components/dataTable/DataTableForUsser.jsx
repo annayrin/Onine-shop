@@ -54,8 +54,7 @@ function DataTableForUsser({ list }) {
                 <Grid.Column width="5">
                   <Segment.Inline>
                     <Image
-                      avatar
-                      className="product-icon"
+                        id="product-icon"
                       src={
                         item.product.img[item.product.img.length - 1]
                           ?.imagePath || images.logoColor

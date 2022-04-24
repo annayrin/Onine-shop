@@ -1,14 +1,17 @@
 import { useAuth0 } from "@auth0/auth0-react";
+import "./login.css"
+import {Button} from "semantic-ui-react";
 
 function LoginButton() {
   const { loginWithRedirect } = useAuth0();
 
-  return <button onClick={() => loginWithRedirect()}>Log In</button>;
+  return <Button id="loginButton"
+                     onClick={() => loginWithRedirect()}>Log In</Button>;
 }
 
 function LoginPage() {
   return (
-    <div style={{ paddingTop: "100px" }}>
+    <div id="loginPage">
       <LoginButton />
     </div>
   );

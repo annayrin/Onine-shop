@@ -1,0 +1,18 @@
+#loginButton{
+    color: white;
+    background-image: linear-gradient( #f5e1a3,#c47d20);
+    border: 1px solid #eec489;
+
+}
+
+#loginButton:hover{
+    color: #da993e;
+    background-image: linear-gradient( #ffffff, #fff1f1);
+    border: 1px solid #de9c3f;
+
+}
+
+#loginPage{
+    height: 50vh;
+    padding: 10%;
+}

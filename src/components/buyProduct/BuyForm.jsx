@@ -13,7 +13,6 @@ const FormFieldError = ({ userName, changeOptions }) => {
     changeOptions({ [event.target.name]: event.target.value });
   
   }
-  /*
   return (
     <Form>
 
@@ -72,7 +71,6 @@ const FormFieldError = ({ userName, changeOptions }) => {
                readOnly />
       </Form.Field>
     </Form>
-    */
   );
 };
 
