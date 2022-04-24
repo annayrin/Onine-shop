@@ -1,0 +1,61 @@
+.ui.fixed.menu.top {
+  /*background-image: linear-gradient( #c47d20, #fef0c4);*/
+
+}
+#menuDesktop, #menuMobile{
+  color: #604427;
+  text-shadow: #282c34;
+  font-family: Century;
+  font-size: large;
+  background: rgba(255, 255, 255, 0.7);
+  height: 80px;
+
+
+}
+
+ui.fixed.menu.top,
+.ui.sidebar.menu {
+  color: inherit;
+  background: rgba(255, 255, 255, 0.64);
+}
+.ui.inverted.icon.menu.item {
+  color: inherit;
+}
+.ui.inverted.icon.menu.item:hover {
+  color: #100f0f;
+}
+
+.customHeader {
+  height: 80px;
+}
+
+.left-pusher.pusher {
+  height: 100%;
+}
+
+.customHeader .pushable {
+
+  position: fixed;
+  z-index: 101;
+  margin: 0;
+  width: 100%;
+  height: auto;
+  overflow-x: visible;
+}
+
+.left-pusher .menu {
+  color: #ba8841;
+  top: 80px;
+  width: 120px;
+  height: auto !important;
+  max-height: inherit;
+}
+.ui.inverted.menu .item{
+  color:inherit;
+  font: inherit;
+  font-size: inherit;
+}
+
+.ui.inverted.menu .item:hover{
+  color: #091e49;
+}

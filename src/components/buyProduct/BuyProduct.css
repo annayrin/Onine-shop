@@ -1,0 +1,73 @@
+/*.custom-modal .ui.form{*/
+/*    min-width: 80%;*/
+/*}*/
+
+/*.ui.modal>.image.content {*/
+/*    display: flex;*/
+/*    gap:10px;*/
+/*}*/
+
+/*.ui.modal>.content>.icon+.description, .ui.modal>.content>.image+.description {*/
+/*    flex-grow: 1;*/
+/*    min-width: 220px;*/
+/*}*/
+
+#buyProduct, #importantid{
+    width: 90%;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#buyFormContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#fields{
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+}
+
+#priceFields{
+    width: 45%;
+}
+
+#formImage{
+    width: 40%;
+
+}
+#formImage.img{
+    width: 100%;
+}
+#confirmOrder{
+    color: white;
+    background-image: linear-gradient( #f5e1a3,#c47d20);
+    border: 1px solid #eec489;
+}
+#cancelOrder:hover{
+   color:black;
+   border:1px solid black;
+    background: none;
+
+}
+
+#confirmOrder:hover{
+    background: none;
+    color:saddlebrown;
+    border: 1px solid #604427;
+}
+
+
+
+#descriptionContainer{
+    display:flex;
+    flex-direction: column;
+}
+#fields{
+    display:flex;
+    flex-direction: row;
+}

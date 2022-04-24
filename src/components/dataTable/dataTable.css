@@ -1,0 +1,101 @@
+#product-icon{
+    width: 150px;
+    height: 150px;
+     border:1px solid #f5cdab;
+    border-radius: 20%;
+    }
+
+#product-icon>img{
+    width: 150px;
+    height: auto;
+}
+
+
+.grid-table {
+    position: relative;
+    font-size: 16px;
+    color: #795b33;
+}
+
+.grid-table>.row{
+    height: 180px;
+}
+#name-product{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#price-id{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#status-id{
+    font-weight: 500;
+}
+
+#address-id{
+    font-size: 12px;
+    font-weight: 300;
+}
+#address{
+ font-size: 17px;
+ font-weight: 500;
+}
+
+.phone-pending{
+    font-size: 10px;
+}
+
+.pending-item{
+    border-bottom: 1px solid #999999;
+}
+
+.item{
+    justify-content: space-between;
+}
+
+.ui.button.btn-upload{
+    background: none;
+    
+}
+.btn-icon{
+    color: rgba(162, 113, 58, 0.7);
+}
+#imageIcon:hover, #imageSubmitIcon:hover{
+    color: #690303;
+    font-size: xx-large;
+}
+#imageIcon:visited, #imageSubmitIcon:focus {
+     color: #690303;
+ }
+input[type=file] {
+    display: none;
+    
+}
+
+.img-icon{
+    cursor: pointer;
+}
+
+.ui.grid.grid-table{
+    margin-bottom: 20px;
+}
+
+.currency{
+    font-size: 10px;
+}
+
+.nine.wide.column.image-upload-form{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.ui.grid>.row{
+    align-items: center;
+}
+
+.ui.grid>.row>.column>.header{
+    padding: 10px;
+}

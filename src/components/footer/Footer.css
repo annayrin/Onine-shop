@@ -1,0 +1,16 @@
+.ui.inverted.segment, .ui.primary.inverted.segment{
+    background: linear-gradient( #f5e1a3,#c47d20);
+    color:white;
+}
+
+.footer{
+    position: absolute;
+    width: 100%;
+}
+#socialIcons{
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+}

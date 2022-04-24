@@ -1,0 +1,67 @@
+.App {
+  text-align: center;
+  position: relative;
+}
+/*.App {*/
+/*  background: linear-gradient(270deg, #faa072, #eac28a, #66caef,*/
+/*  #7291f6, #8ec7ff, #ad84f5, #c2bec1, #ff002b,*/
+/*  #9ae9fc, #d294f1, #f5e7e7);*/
+/*  background-size: 1800% 1800%;*/
+/*  -webkit-animation: AnimationName 30s ease infinite;*/
+/*  -moz-animation: AnimationName 30s ease infinite;*/
+/*  animation: AnimationName 30s ease infinite;*/
+/*}*/
+
+/*@-webkit-keyframes AnimationName {*/
+/*  0%{background-position:0% 50%}*/
+/*  50%{background-position:100% 50%}*/
+/*  100%{background-position:0% 50%}*/
+/*}*/
+@-moz-keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.main{
+  min-height: calc(100% - 300px);
+}
