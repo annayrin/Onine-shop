@@ -12,37 +12,38 @@
 /*    min-width: 220px;*/
 /*}*/
 
-#buyProduct, #importantid{
-    width: 90%;
-    display:flex;
-    flex-direction: row;
-    justify-content: center;
-}
+/*#buyProduct, #importantid{*/
+/*    width: 90%;*/
+/*    display:flex;*/
+/*    flex-direction: row;*/
+/*    justify-content: center;*/
+/*}*/
 
-#buyFormContainer{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-}
+/*#buyFormContainer{*/
+/*    display: flex;*/
+/*    flex-direction: row;*/
+/*    justify-content: space-around;*/
+/*    align-items: center;*/
+/*}*/
 
-#fields{
-    display: flex;
-    gap: 20px;
-    flex-direction: row;
-}
+/*#fields{*/
+/*    display: flex;*/
+/*    gap: 20px;*/
+/*    flex-direction: row;*/
+/*}*/
 
-#priceFields{
-    width: 45%;
-}
+/*#priceFields{*/
+/*    width: 45%;*/
+/*}*/
 
-#formImage{
-    width: 40%;
+/*#formImage{*/
+/*    width: 40%;*/
 
-}
-#formImage.img{
-    width: 100%;
-}
+/*}*/
+/*#formImage.img{*/
+/*    width: 100%;*/
+/*}*/
+
 #confirmOrder{
     color: white;
     background-image: linear-gradient( #f5e1a3,#c47d20);
@@ -67,7 +68,7 @@
     display:flex;
     flex-direction: column;
 }
-#fields{
+#fields{ //??? no funcciona
     display:flex;
     flex-direction: row;
 }

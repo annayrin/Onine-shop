@@ -13,9 +13,10 @@ const FormFieldError = ({ userName, changeOptions }) => {
     changeOptions({ [event.target.name]: event.target.value });
   
   }
+  /*
   return (
     <Form>
-   
+
       <Form.Field
         id="form-input-control-full-name"
         control={Input}
@@ -71,6 +72,7 @@ const FormFieldError = ({ userName, changeOptions }) => {
                readOnly />
       </Form.Field>
     </Form>
+    */
   );
 };
 

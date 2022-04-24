@@ -74,7 +74,7 @@ function BuyProduct({ productInfo, item }) {
 
 
   return (
-
+/*
   <Modal id="buyProduct importantid"
       className="custom-modal"
       onClose={() => setOpen(false)}
@@ -144,7 +144,7 @@ function BuyProduct({ productInfo, item }) {
                   }
                 }
             />
-
+*/
 
           <Form.Field
               id="form-quantity"
