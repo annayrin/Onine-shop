@@ -24,8 +24,7 @@ function CardItem({
             <Card.Content id="cardContent">
                 <Card.Header>{name}</Card.Header>
                 <Card.Description>
-                    <h4>{description}</h4>
-                    <p>Price AMD {price}</p>
+                    <h5>{description}</h5>
                      </Card.Description>
 
             </Card.Content>

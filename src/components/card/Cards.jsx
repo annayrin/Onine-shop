@@ -3,11 +3,14 @@ import { Pagination } from "semantic-ui-react";
 import { getProducts } from "../../services/api";
 import CardItem from "./CardItem";
 import "./cards.css";
+import Filter from "../filter/Filter";
 
 const Cards = ({pageDivider, setResponseInfo}) => {
   const [result, setResult] = useState([]);
   const [productsByPage, setProductsByPage] = useState([]);
   const [start, setStart] = useState(0);
+
+//need to chnage the allproducts to list
 
   useEffect(() => {
     (async function createPagination() {
@@ -16,22 +19,33 @@ const Cards = ({pageDivider, setResponseInfo}) => {
     })();
   }, []);
 
+
+  const [filtered, setFiltered]=useState(result);
+
+  const childToParent = (filteredResult) => {
+    setFiltered(filteredResult);
+  };
+
   useEffect(() => {
-  setProductsByPage(result.slice(start, start + pageDivider));
-}, [start, result]);
+  setProductsByPage(filtered.slice(start, start + pageDivider));
+}, [start, filtered]);
 
   function goToPage(e, data) {
     console.log(data.activePage);
     setStart(data.activePage * pageDivider - pageDivider);
   }
 
+
   return (
+      <div id="cardsContainer">
+      <Filter allItems={result} childToParent={childToParent}/>
     <div className="ui stackable three column grid centered productItems">
       {productsByPage &&
         productsByPage.length > 0 &&
         productsByPage.map((item) => {
-          console.log("itemnew", item);
+
           return (
+
             <CardItem
                 item={item}
           key={item.id}
@@ -56,6 +70,7 @@ const Cards = ({pageDivider, setResponseInfo}) => {
 }
       </div>
     </div>
+      </div>
   );
 };
 

@@ -18,9 +18,9 @@ function Slides() {
 
 
 
-    // (function autoHandle () {              !!miacru
-    //    return setInterval(handleNext,5000)
-    // })()
+     /*(function autoHandle () {              //!!miacru
+       return setInterval(handleNext,5000)
+     })()*/
 
 
   return (

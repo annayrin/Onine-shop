@@ -1,0 +1,16 @@
+#filterButtons{
+    height: 50px;
+    margin: 10px;
+    padding: 10px;
+}
+#btn1:hover, #btn2:hover, #btn3:hover, #btn4:hover, #btn5:hover {
+    border: 1px solid #67d5ef;
+    background: none;
+    color: #9beaf4;
+}
+#btn1, #btn2, #btn3, #btn4, #btn5 {
+    border: 1px solid #f5d6ae;
+    background-color: #67d5ef;
+    color: #ffffff;
+
+}

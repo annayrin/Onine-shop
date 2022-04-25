@@ -28,6 +28,7 @@ function AddProduct({setResponseInfo}) {
       const token = await getAccessTokenSilently();
 
       const productObj = {
+        section:options.section,
         name: options.productName,
         price: options.productPrice,
         currency: options.productCurrency,

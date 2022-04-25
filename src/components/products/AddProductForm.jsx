@@ -31,6 +31,13 @@ function AddProductForm({ changeOptions }) {
           onChange={(e) => handleChange(e)}
         />
         <Form.Field
+            name="section"
+            control={TextArea}
+            label="Section"
+            placeholder="Section"
+            onChange={(e) => handleChange(e)}
+        />
+        <Form.Field
           name="productCount"
           control={Input}
           type="number"

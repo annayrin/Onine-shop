@@ -4,8 +4,7 @@ import DataTable from "../dataTable/DataTable";
 import PendingTable from "../dataTable/PendingTable";
 
 const Tabs = ({ pendingProducts, allProducts, changeStatus, uploadImg }) => {
-  console.log("pendingProducts", pendingProducts);
-  console.log("allProducts", allProducts);
+
   const panes = [
     {
       menuItem: "All Products",
