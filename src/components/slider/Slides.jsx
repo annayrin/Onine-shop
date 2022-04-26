@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import React, {useEffect, useState} from "react";
 import slidesData from "../../services/slideData";
 import "./slide.css";
 import { Button, Icon } from "semantic-ui-react";
 import slideshow from "../../services/slideshow";
+
 
 function Slides() {
   const [slideData, setSlideData] = useState(slidesData());
@@ -18,9 +19,15 @@ function Slides() {
 
 
 
-     /*(function autoHandle () {              //!!miacru
-       return setInterval(handleNext,5000)
-     })()*/
+
+
+    /*useEffect(() => { //miacru
+        const timer = setTimeout(() => {
+            //console.log(index)
+            return handleNext();
+        },3000);
+        return () => clearTimeout(timer);
+    }, [index]);*/
 
 
   return (

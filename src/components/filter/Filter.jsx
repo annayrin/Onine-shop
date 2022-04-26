@@ -3,10 +3,7 @@ import "./filter.css";
 import {Button, Search, Segment} from "semantic-ui-react";
 
 function Filter({allItems, childToParent}){
-let allData = allItems;
-    function filtrar(section,result){
-        return result.filter(item => item.section === section)
-    }
+
 
     return(
         <Segment.Inline id="filterButtons">

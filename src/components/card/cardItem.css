@@ -20,8 +20,19 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family: Serif, serif;
 
 }
+
+#CardHeader{
+    font-family: Serif, serif;
+color: #352b4a;
+}
+#CardDescription{
+    font-family: Serif, cursive;
+    color: #2d2a26;
+}
+
 #imageContainer{
     display: flex;
     justify-content: center;

@@ -115,7 +115,7 @@ function BuyProduct({ productInfo, item }) {
               control={Input}
               label="Quantity"
               max={stock}
-              min={0}
+              min={1}
               type = "number"
               onChange={(e) => {
                 setQuantity(e.target.value);
@@ -124,7 +124,7 @@ function BuyProduct({ productInfo, item }) {
           }
           />
             <Form.Field
-                id="form-input-discount"
+                id="formDiscount"
                 fluid
                 control={Input}
                 label="Do you have a discount coupon?"

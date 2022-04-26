@@ -55,6 +55,10 @@
 
 }
 
+.ui.form .field #formDiscount>label{
+    color: #65023d;
+}
+
 #confirmOrder:hover{
     background: none;
     color:saddlebrown;

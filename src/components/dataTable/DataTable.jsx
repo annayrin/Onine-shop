@@ -74,6 +74,8 @@ function DataTable({ list, uploadImg }) {
                   <Segment.Inline >
                       <form 
                         onSubmit={(e) => {
+                          console.log(imgFile);
+                          console.log(item.id);
                           e.preventDefault();
                           uploadImg(imgFile, item.id);
                         }}

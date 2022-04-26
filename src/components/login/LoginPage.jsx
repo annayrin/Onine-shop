@@ -12,6 +12,9 @@ function LoginButton() {
 function LoginPage() {
   return (
     <div id="loginPage">
+      <div id="intro">
+        Please sign in to your account or create a new account to continue.
+      </div>
       <LoginButton />
     </div>
   );

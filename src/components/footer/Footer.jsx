@@ -6,7 +6,7 @@ import images from "../../services/imgData";
 
 function Footer() {
   return (
-      <div className="footer">
+      <div id="footer">
         <Segment fixed="bottom" inverted vertical >
           <Container>
             <Grid divided inverted stackable>

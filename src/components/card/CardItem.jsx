@@ -22,9 +22,9 @@ function CardItem({
         <Card id="card">
             <Image id="imageContainer" src={image?image.imagePath: images.logoColor} wrapped ui={false} />
             <Card.Content id="cardContent">
-                <Card.Header>{name}</Card.Header>
-                <Card.Description>
-                    <h5>{description}</h5>
+                <Card.Header id="CardHeader">{name}</Card.Header>
+                <Card.Description >
+                    <h5 id="CardDescription">{description}</h5>
                      </Card.Description>
 
             </Card.Content>

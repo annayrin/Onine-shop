@@ -18,7 +18,7 @@ ui.fixed.menu.top,
   color: inherit;
   background: rgba(255, 255, 255, 0.64);
 }
-.ui.inverted.icon.menu.item {
+.ui.inverted.icon.menu .item {
   color: inherit;
 }
 .ui.inverted.icon.menu.item:hover {
@@ -56,6 +56,13 @@ ui.fixed.menu.top,
   font-size: inherit;
 }
 
-.ui.inverted.menu .item:hover{
-  color: #091e49;
+.ui.inverted.menu .item.menuItem:hover{
+  color: #c1d3fa;
+}
+
+#emailMobile{
+  font-size: 15px;
+}
+#emailDesktop{
+  font-size: 15px;
 }
