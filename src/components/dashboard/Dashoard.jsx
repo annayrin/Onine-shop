@@ -14,7 +14,7 @@ import { useEffect, useState } from "react";
 import AddProduct from "../products/AddProduct";
 import Tabs from "../tabs/Tabs";
 import { ADMIN, UNPAID } from "../../services/constants";
-import DataTableForUsser from "../dataTable/DataTableForUsser"; 
+import DataTableForUser from "../dataTable/DataTableForUser";
 import "./dashboard.css";
 
 function Dashboard() {
@@ -122,7 +122,7 @@ function Dashboard() {
           />
         </>
       ) : (
-        <DataTableForUsser list={orderList} />
+        <DataTableForUser list={orderList} />
       )}
     </div>
   );

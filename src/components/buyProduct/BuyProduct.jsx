@@ -125,8 +125,10 @@ function BuyProduct({ productInfo, item }) {
           />
             <Form.Field
                 id="formDiscount"
+                inverted
                 fluid
                 control={Input}
+                red
                 label="Do you have a discount coupon?"
                 placeholder ="Input your coupon"
                 onChange={(e) => {

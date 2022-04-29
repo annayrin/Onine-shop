@@ -1,16 +1,4 @@
-/*.custom-modal .ui.form{*/
-/*    min-width: 80%;*/
-/*}*/
 
-/*.ui.modal>.image.content {*/
-/*    display: flex;*/
-/*    gap:10px;*/
-/*}*/
-
-/*.ui.modal>.content>.icon+.description, .ui.modal>.content>.image+.description {*/
-/*    flex-grow: 1;*/
-/*    min-width: 220px;*/
-/*}*/
 
 #buyProduct, #importantid{
     width: 90%;
@@ -24,12 +12,15 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 #fields{
     display: flex;
     gap: 20px;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 #priceFields{
@@ -55,7 +46,7 @@
 
 }
 
-.ui.form .field #formDiscount>label{
+#formDiscount{
     color: #65023d;
 }
 
@@ -71,7 +62,8 @@
     display:flex;
     flex-direction: column;
 }
-#fields{
-    display:flex;
-    flex-direction: row;
+
+#descriptionField{
+    text-align: center;
+
 }

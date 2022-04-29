@@ -10,7 +10,7 @@ import {
   Item,
   Button,
   Icon,
-  Input,
+  Input, Form,
 } from "semantic-ui-react";
 import "./dataTable.css";
 import { useState, useEffect, Fragment } from "react";
@@ -48,31 +48,24 @@ function DataTable({ list, uploadImg }) {
         productsByPage.length > 0 &&
         productsByPage.map((item) => {
           return (
-            <Grid className="grid-table" key={nanoid()}>
-              <Grid.Row>
-                <Grid.Column width="5">
-                  <Segment.Inline>
-                    <Image
+            <Item.Group className="grid-table" key={nanoid()}>
+              <Item className="allProducts">
+              <Image
                       avatar
                       id="product-icon"
                       src={
                         item.img[item.img.length - 1]?.imagePath || images.logoColor
                       }
                     />
-                    </Segment.Inline>
-                    </Grid.Column>
 
-                    <Grid.Column width={5}>
-                    <Segment.Inline>{item.name}</Segment.Inline>
-                    <Segment.Inline>
+                      <Item.Content>{item.name}</Item.Content>
+                      <Item.Content>
                       {item.price}
                       <span className="currency">{item.currency}</span>
-                    </Segment.Inline>
-                  
-                </Grid.Column>
-                <Grid.Column width="4" className="image-upload-form">
-                  <Segment.Inline >
-                      <form 
+                      </Item.Content>
+
+                  <Item.Content className="image-upload-form" >
+                      <Form
                         onSubmit={(e) => {
                           console.log(imgFile);
                           console.log(item.id);
@@ -80,7 +73,6 @@ function DataTable({ list, uploadImg }) {
                           uploadImg(imgFile, item.id);
                         }}
                       >
-                     
                           <label htmlFor="file-input" className="img-icon">
                             <Icon
                                 id="imageIcon"
@@ -102,11 +94,10 @@ function DataTable({ list, uploadImg }) {
                               size="large"
                             />
                           </Button>
-                      </form>
-                  </Segment.Inline>
-                </Grid.Column>
-              </Grid.Row>
-            </Grid>
+                      </Form>
+                  </Item.Content>
+              </Item>
+            </Item.Group>
           );
         })}
       <div className="pagination-container">

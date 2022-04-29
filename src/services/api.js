@@ -97,7 +97,7 @@ export async function authoriseUser(user, token) {
     });
     return response.json();
   } catch (error) {
-    console.log("sxalPost", error);
+    console.log("Check your post method", error);
   }
 }
 export async function confirmOrder(user, product, token, option) {

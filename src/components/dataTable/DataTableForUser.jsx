@@ -13,13 +13,13 @@ import "./dataTable.css";
 import { useState, useEffect } from "react";
 import images from "../../services/imgData";
 
-function DataTableForUsser({ list }) {
+function DataTableForUser({ list }) {
   const [productsByPage, setProductsByPage] = useState([]);
   const [imgFile, setImgFile] = useState();
   const [start, setStart] = useState(0);
   const [result, setResult] = useState([]);
 
-  const pageDevider = 4;
+  const pageDivider = 4;
 
   function onChange(e) {
     console.log(e.target.files);
@@ -30,7 +30,7 @@ function DataTableForUsser({ list }) {
   }, [imgFile]);
 
   useEffect(() => {
-    setProductsByPage(list.slice(start, start + pageDevider));
+    setProductsByPage(list.slice(start, start + pageDivider));
   }, [start, result]);
 
   useEffect(() => {
@@ -38,7 +38,7 @@ function DataTableForUsser({ list }) {
   }, [list]);
 
   function goToPage(e, data) {
-    setStart(data.activePage * pageDevider - pageDevider);
+    setStart(data.activePage * pageDivider - pageDivider);
   }
   return (
     <>
@@ -87,11 +87,11 @@ function DataTableForUsser({ list }) {
           defaultActivePage={1}
           secondary
           onPageChange={goToPage}
-          totalPages={Math.ceil(list.length / pageDevider)}
+          totalPages={Math.ceil(list.length / pageDivider)}
         />
       </div>
     </>
   );
 }
 
-export default DataTableForUsser;
+export default DataTableForUser;
